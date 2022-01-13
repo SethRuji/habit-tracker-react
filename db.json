@@ -1,0 +1,49 @@
+{
+  "habits": [
+    {
+      "id": 1,
+      "name": "every other day",
+      "description": "first",
+      "reminder": true,
+      "frequency": {
+        "M": true,
+        "T": false,
+        "W": true,
+        "TH": false,
+        "F": true,
+        "Sa": false,
+        "Su": true
+      }
+    },
+    {
+      "id": 2,
+      "name": "weekdays",
+      "description": "2nd",
+      "reminder": false,
+      "frequency": {
+        "M": true,
+        "T": true,
+        "W": true,
+        "TH": true,
+        "F": true,
+        "Sa": false,
+        "Su": false
+      }
+    },
+    {
+      "id": 3,
+      "name": "weekends",
+      "description": "3rd",
+      "reminder": true,
+      "frequency": {
+        "M": false,
+        "T": false,
+        "W": false,
+        "TH": false,
+        "F": false,
+        "Sa": true,
+        "Su": true
+      }
+    }
+  ]
+}

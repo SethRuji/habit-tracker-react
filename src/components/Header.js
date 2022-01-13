@@ -1,17 +1,14 @@
-import AddButton from "./AddButton";
+import Button from "./Button";
 
-const Header = ({ title }) => {
-  const habits = [];
-
-  const onClick = () => {
-    console.log("btnClick");
-    habits.push("h");
-  };
-
+const Header = ({ title, onAdd, showAdd }) => {
   return (
     <header>
       <h1>{title}</h1>
-      <AddButton onClick={onClick}></AddButton>
+      <Button
+        onClick={onAdd}
+        text={showAdd ? "close" : "add"}
+        color={showAdd ? "red" : "lightgreen"}
+      />
     </header>
   );
 };
